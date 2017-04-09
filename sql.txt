@@ -1,0 +1,79 @@
+alter table tablname
+(
+	add | drop column datatype [null|not null] [constraints]
+)
+
+commit [transaction]
+
+create index indexname
+on tablename(column,...)
+
+create procedure procedurename [parameters][options]
+as
+sql statement
+
+create table tablename
+(
+ column datatype [null\not null] [constraints]
+)
+
+create view viewname as
+select column,...
+from tables,...
+[where ...]
+[group by ...]
+[having ...]
+
+delete from tablname
+[where ...]
+
+drop index|procedure|table|view
+indexname|procedurename|tablename|viewname
+
+insert into tablename [(column, ...)]
+value(values,...)
+
+insert into tablename [(columns, ...)]
+select columns,... from tablename,...
+[where ...]
+
+rollback [to savepointname]
+rollback transaction
+
+select columnname,...
+from tablename,...
+[where ...]
+[union ...]
+[group by ...]
+[having ...]
+[order by ...]
+
+update tablename
+set columnname = value, ...
+[where ...]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
